@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <div id="ctn" class="container">
+
+      <div id="images" class="container">
+        <img id="bckgnd" src="img/bckgnd.png">
+        <img id="logo" src="img/Logo-game.png">
+        <img id="bckgnd2" src="img/bckgnd2.png">
+      </div>
+
+      <canvas id="myCanvas" style="z-index: 1;"></canvas>
+      
+      <button id="pause-btn" onclick="pause('icon')"><i id="icon" class="material-icons" style="width: 30px;">pause</i></button>
+      <button id="cmd-btn" onclick="showCmd('cmd')">CMD</button>
+      <button id="path-btn" onclick="activePath()">PATH</button>
+      <button id="restart-btn" onclick="restartGame()">Restart</button>
+    </div>
+    <img id="cmd" src="img/instructions.png" style="position: absolute;left: 600px;top: 300px;">
+    
+    
+    <script src="Cell.js"></script>
+    <script src="Grid.js"></script>
+    <script src="Tetramino.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+@font-face{
+  font-family: "pixel_font";
+    src: url('../Tetris/font/pixel_font.eot');
+    src: url('../Tetris/font/pixel_font.eot?#iefix') format('embedded-opentype'),
+         url('../Tetris/font/pixel_font.woff') format('woff'),
+         url('../Tetris/font/pixel_font.ttf') format('truetype'),
+         url('../Tetris/font/pixel_font.svg#acmeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 10px;
+    padding: 0;
+}
+
+canvas {
+  display: block;
+  float: left;
+}
+
+#myCanvas{
+  background-color: #3b83bd;
+  float: right;
+}
+
+#images{
+  background-color: black;
+}
+
+#bckgnd{
+  max-width: 100px;
+  max-height: 74px;
+  height: 100%;
+}
+
+#bckgnd2{
+  max-width: 100px;
+  max-height: 75px;
+  height: 100%;
+  float: right;
+}
+
+#logo{
+  width: 100px;
+  height: 60px;
+}
+
+#restart-btn, #path-btn, #cmd-btn, #pause-btn{
+  z-index: 2;
+  border-width: 2px;
+  border-color: black;
+  position: absolute;
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-family: "pixel_font";
+}
+
+#cmd-btn{
+  background-color: blueviolet;
+}
+
+#cmd-btn:hover{
+  color: black;
+}
+
+#restart-btn{
+  background-color: red;
+}
+
+#path-btn{
+  background-color: green;
+}
+
+#restart-btn:hover{
+  color: black;
+}
+
+#path-btn:hover{
+  color: black;
+}
+
+#pause-btn{
+  background-color: darkorange;
+}
+
+#pause-btn:hover{
+  color: black;
+}
+
+#icon{
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  transform: translate(0%,+25%);
+  width: 10px;
+  height: 10px;
+}
+
+
+
