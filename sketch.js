@@ -82,7 +82,7 @@ function draw() {
 
     //se frameCount è 60, è passato un secondo
     if (frameCount % 60 == 0) {
-        ctx.clearRect(Math.floor(constant * 70), Math.floor(constant * 200), Math.floor(constant * 200), Math.floor(constant * 50))
+        ctx.clearRect(Math.floor(constant * 80), Math.floor(constant * 200), Math.floor(constant * 200), Math.floor(constant * 50))
         timer()
     }
 
@@ -123,6 +123,12 @@ function keyPressed() {
 
     //rotazione
     if (keyCode === 38) {
+        let tmp = _.cloneDeep(element)
+        tmp.rotate()
+        if(tmp.elementCollide(matrix.getGrid())){
+            if(tmp.collideBorder())
+                return
+        }
         element.rotate()
     }
     if (keyIsDown(LEFT_ARROW) || keyIsDown(RIGHT_ARROW)) {
